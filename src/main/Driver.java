@@ -10,6 +10,8 @@ public class Driver {
         //myStringBuilderDeleteThread.delete();
         //Test.deleteCharAt();
         //Test.replace();
-        Test.insert();
+        //Test.insert();
+        //Test.indexOf();
+        Test.reverse();
     }
 }

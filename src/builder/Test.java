@@ -96,4 +96,20 @@ public class Test {
         stringBuilder.insert(5," Emre ");
         System.out.println(stringBuilder.toString());
     }
+    public static void indexOf(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Yunus Emre Çiftçi");
+
+        //indexOf verilen string ifadenin StringBuilder nesnesinin hangi indeksinde olup olmadığını bulur ve int değer atar.
+        int i = stringBuilder.indexOf("e", 0);
+        System.out.println(i);
+    }
+    public static void reverse(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Yunus Emre");
+        //reverse metodu verilen String ifadeyi tersine çevirir.
+        stringBuilder.reverse();
+        System.out.println(stringBuilder.toString());
+    }
+
 }
