@@ -9,6 +9,7 @@ public class Driver {
         //Test.MyStringBuilderDeleteThread myStringBuilderDeleteThread = new Test.MyStringBuilderDeleteThread();
         //myStringBuilderDeleteThread.delete();
         //Test.deleteCharAt();
-        Test.replace();
+        //Test.replace();
+        Test.insert();
     }
 }

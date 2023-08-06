@@ -1,7 +1,7 @@
 package builder;
 
 public class Test {
-    /*StringBuilder, metinsel veriler üzerinde değişiklik yapmak için kullanılan ve performansı artıran bir araçtır.
+    /* StringBuilder, metinsel veriler üzerinde değişiklik yapmak için kullanılan ve performansı artıran bir araçtır.
        Normal String sınıfının aksine, StringBuilder nesneleri üzerinde değişiklikler yapılabilir ve yeni veriler eklemek,
        veri silmek, değiştirmek veya birleştirmek gibi işlemler yapmak kolaydır.
        StringBuilder sınıfı, metinsel veriler üzerinde yoğun işlem yapılan durumlarda performansı artırmak için tercih edilir.
@@ -68,7 +68,8 @@ public class Test {
             thread.start();
         }
     }
-    public static void deleteCharAt(){
+
+    public static void deleteCharAt() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Yunus ").append("Emre").append("Çiftçi").append("learning").append("JAVA");
         System.out.println("Tüm elemanlar: " + stringBuilder.toString());
@@ -76,14 +77,23 @@ public class Test {
         stringBuilder.deleteCharAt(0);
         System.out.println("Güncel Tüm Elemanlar: " + stringBuilder.toString());
     }
-    public static void replace(){
+
+    public static void replace() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Yunus").append("Emre");
         //replace mevcut StringBuilder nesnesine yeni string eklemek için kullanılır.
         //1. parametre eklemeye hangi indeks'ten başlanacağını bildirir.
         //2. parametre eklemeyi hangi indeks'te bitireceğini bildirir.
         //3. parametre eklenecek String ifadeyi içerir.
-        stringBuilder.replace(stringBuilder.length(),stringBuilder.length()," Çiftçi");
+        stringBuilder.replace(stringBuilder.length(), stringBuilder.length(), " Çiftçi");
+        System.out.println(stringBuilder.toString());
+    }
+
+    public static void insert() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Yunus").append("Çiftçi");
+        //insert metodu mevcut string'e yeni yazım eklemek için kullanılır.
+        stringBuilder.insert(5," Emre ");
         System.out.println(stringBuilder.toString());
     }
 }
